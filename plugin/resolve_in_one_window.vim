@@ -37,8 +37,8 @@ function! ResolveFile()
 
   " Go to >>>> line
   execute "normal g'o"
-  " Center vertically
-  execute "normal zz"
+  " Cursor line on top
+  execute "normal zt"
 
   redraw
   echo "Accept y)ours, t)heirs, b)oth; e)dit, u)ndo, q)uit: "
