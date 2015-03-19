@@ -107,9 +107,9 @@ function! ResolveAll()
     execute "syntax clear"
 
     " Highlight colors
-    execute "highlight DiffYours ctermbg=Green guibg=#77ff77"
-    execute "highlight DiffTheirs ctermbg=Red guibg=#ff7777"
-    execute "highlight DiffOriginal ctermbg=Blue guibg=#7777ff"
+    execute "highlight DiffYours ctermbg=22 guibg=#77ff77"
+    execute "highlight DiffTheirs ctermbg=160 guibg=#ff7777"
+    execute "highlight DiffOriginal ctermbg=18 guibg=#7777ff"
 
     execute "syntax region DiffRegion start=/^>>>> ORIGINAL .*/ end=/^<<<<$/ contains=DiffOriginal,DiffTheirs,DiffYours keepend"
     execute "syntax region DiffOriginal start=/^>>>> ORIGINAL .*/hs=e+1 end=/^==== THEIRS .*$/he=s-1,me=s-1 contained"
